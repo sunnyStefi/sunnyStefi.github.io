@@ -53,7 +53,8 @@ The `order-grocery` task fires every **Monday at 10:00** .
 - Open `https://www.GROCERY_SHOP.com` and fetch credentials from a local config file
 
 > 🎩 **TIP** Claude Desktop runs in a sandbox — it can't read from the system keychain or environment variables, so credentials live in a local file.
-> Using Claude Code would solve the issue (adding keychain credentials or encrypted env file) but I did not want to use a separate launchd cjob for this workflow. 
+> Using Claude Code would solve the issue (adding keychain credentials or encrypted env file) but I did not want to use a separate launchd job for this workflow.
+> 
 
 **2. Select the delivery slot**
 
