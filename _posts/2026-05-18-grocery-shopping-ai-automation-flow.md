@@ -81,8 +81,8 @@ The `order-grocery` task fires every **Monday at 10:00** .
 
 **5. AI, wait for your boss to confirm!**
 
-The cart is built, the slot is booked, the substitutions are made. 
-Then it stops, and I quickly review and hit **Confirm Order**..
+The cart is built, the slot is booked, the substitutions are made and the checkout process is . 
+Then it stops, and I quickly review it before hitting **Confirm Order**.
 
 ---
 
