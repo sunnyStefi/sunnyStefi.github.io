@@ -41,7 +41,8 @@ I usually place the order on **Monday** and schedule delivery for **Thursday**, 
 
 ### The full workflow
 
-Now the whole process runs as a single scheduled job: **Claude Desktop Scheduled Tasks** driving a **Playwright MCP server**. No database stock, no external state management.
+Now the whole process runs as a single scheduled job: **Claude Desktop Scheduled Tasks** driving a **Playwright MCP server**. 
+No database stock, no external state management. Only one prompt.
 
 The goal was to build a **ready-to-confirm** cart.
 
