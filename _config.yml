@@ -1,20 +1,18 @@
-title: Sunny Stefi
-description: Notes on software and things that matter.
+title: STEFANIA POZZI
+description:
 url: "https://sunnyStefi.github.io"
 baseurl: ""
 
 author:
   name: Stefania
 
+theme: minima
+minima:
+  skin: dark
+
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
-highlighter: rouge
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md

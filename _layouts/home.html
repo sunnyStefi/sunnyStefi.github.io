@@ -1,0 +1,108 @@
+---
+layout: base
+---
+
+<div class="home">
+  {{ content }}
+
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+  {% assign categories = posts | map: "categories" | join: "," | split: "," | uniq | sort %}
+
+  {%- if posts.size > 0 -%}
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+    {% if categories.size > 0 %}
+      {% for category in categories %}
+        {% assign cat_posts = posts | where_exp: "p", "p.categories contains category" %}
+        {% if cat_posts.size > 0 %}
+          <h2 class="post-list-heading">{{ category }}</h2>
+          <ul class="post-list">
+            {% for post in cat_posts %}
+            <li class="post-list-item">
+              {%- if post.image -%}
+                <a href="{{ post.url | relative_url }}" class="post-thumbnail">
+                  <img src="{{ post.image }}" alt="{{ post.title | escape }}">
+                </a>
+              {%- endif -%}
+              <div class="post-list-content">
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a>
+                </h3>
+                {%- if post.description -%}
+                  <p class="post-excerpt">{{ post.description }}</p>
+                {%- elsif site.minima.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+
+      {% assign uncategorized = posts | where_exp: "p", "p.categories.size == 0" %}
+      {% if uncategorized.size > 0 %}
+        <h2 class="post-list-heading">Other</h2>
+        <ul class="post-list">
+          {% for post in uncategorized %}
+          <li class="post-list-item">
+            {%- if post.image -%}
+              <a href="{{ post.url | relative_url }}" class="post-thumbnail">
+                <img src="{{ post.image }}" alt="{{ post.title | escape }}">
+              </a>
+            {%- endif -%}
+            <div class="post-list-content">
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
+              {%- if post.description -%}
+                <p class="post-excerpt">{{ post.description }}</p>
+              {%- elsif site.minima.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+    {% else %}
+      <ul class="post-list">
+        {%- for post in posts -%}
+        <li class="post-list-item">
+          {%- if post.image -%}
+            <a href="{{ post.url | relative_url }}" class="post-thumbnail">
+              <img src="{{ post.image }}" alt="{{ post.title | escape }}">
+            </a>
+          {%- endif -%}
+          <div class="post-list-content">
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if post.description -%}
+              <p class="post-excerpt">{{ post.description }}</p>
+            {%- elsif site.minima.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </div>
+        </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
+
+  {%- endif -%}
+</div>

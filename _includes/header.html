@@ -1,0 +1,25 @@
+<header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+    <div class="site-accent"></div>
+
+    <div class="site-header-bottom">
+      <span class="site-tagline">{{ site.description | escape }}</span>
+
+      {%- assign cat_pages = site.pages | where: "layout", "category" | sort: "order" -%}
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon"></span>
+        </label>
+
+        <div class="nav-items">
+          {%- for p in cat_pages -%}
+          <a class="nav-item" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+          {%- endfor -%}
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
