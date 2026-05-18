@@ -1,0 +1,20 @@
+title: Sunny Stefi
+description: Notes on software and things that matter.
+url: "https://sunnyStefi.github.io"
+baseurl: ""
+
+author:
+  name: Stefania
+
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
