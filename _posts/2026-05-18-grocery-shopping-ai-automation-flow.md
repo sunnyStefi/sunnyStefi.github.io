@@ -14,7 +14,7 @@ image: /assets/images/order-buy.jpg
 
 ### Why bother automating a recurring trivial task
 
-"It only takes a few minutes" is the most expensive sentence in modern life. Online grocery shopping sounds simple, but it really add friction to your life. 
+"It only takes a few minutes" is the most expensive sentence in modern life. Online grocery shopping sounds simple, but it really adds friction to your life. 
 What I gain from automating this flow:
 
 1. **Mental overhead**: it frees up attention for work/rest that actually matters.

@@ -1,0 +1,25 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "STEFANIA POZZI" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e7]:
+        - generic [ref=e8]:
+          - link "Engineering" [ref=e9] [cursor=pointer]:
+            - /url: /engineering/
+          - link "AI Workflow Automations" [ref=e10] [cursor=pointer]:
+            - /url: /ai-workflow-automations/
+  - main "Content" [ref=e11]:
+    - generic [ref=e13]:
+      - heading "Engineering" [level=1] [ref=e14]
+      - paragraph [ref=e15]: No posts yet.
+  - contentinfo [ref=e16]:
+    - generic [ref=e18]:
+      - link "stefania.pozzi.it@gmail.com" [ref=e20] [cursor=pointer]:
+        - /url: mailto:stefania.pozzi.it@gmail.com
+      - generic [ref=e21]:
+        - link "LinkedIn" [ref=e22] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/sunny-stefi/
+          - text: LinkedIn
+        - generic [ref=e24]: ·
+        - generic [ref=e25]: The Hague, 2597 ZL

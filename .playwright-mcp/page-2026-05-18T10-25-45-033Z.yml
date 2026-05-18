@@ -1,0 +1,45 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "STEFANIA POZZI" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e7]:
+        - generic [ref=e8]:
+          - link "Engineering" [ref=e9] [cursor=pointer]:
+            - /url: /engineering/
+          - link "AI Workflow Automations" [ref=e10] [cursor=pointer]:
+            - /url: /ai-workflow-automations/
+  - main "Content" [ref=e11]:
+    - generic [ref=e13]:
+      - heading "AI Workflow Automations" [level=2] [ref=e14]
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - link "Grocery Shopping AI Automation Flow" [ref=e17] [cursor=pointer]:
+            - /url: /2026/05/18/grocery-shopping-ai-automation-flow/
+            - img "Grocery Shopping AI Automation Flow" [ref=e18]
+          - generic [ref=e19]:
+            - text: May 18, 2026
+            - heading "Grocery Shopping AI Automation Flow" [level=3] [ref=e20]:
+              - link "Grocery Shopping AI Automation Flow" [ref=e21] [cursor=pointer]:
+                - /url: /2026/05/18/grocery-shopping-ai-automation-flow/
+            - paragraph [ref=e22]: A one-command grocery automation built with Claude Desktop, and why I still keep myself in the loop for the final step.
+        - listitem [ref=e23]:
+          - link "Hour Registration AI Automation Flow" [ref=e24] [cursor=pointer]:
+            - /url: /2026/05/15/hour-registration-AI-automation/
+            - img "Hour Registration AI Automation Flow" [ref=e25]
+          - generic [ref=e26]:
+            - text: May 15, 2026
+            - heading "Hour Registration AI Automation Flow" [level=3] [ref=e27]:
+              - link "Hour Registration AI Automation Flow" [ref=e28] [cursor=pointer]:
+                - /url: /2026/05/15/hour-registration-AI-automation/
+            - paragraph [ref=e29]: How I automade my entire billing cycle with a Claude Code plugin that reads my calendar, submits hours, downloads timesheets, and emails work slips.
+  - contentinfo [ref=e30]:
+    - generic [ref=e32]:
+      - link "stefania.pozzi.it@gmail.com" [ref=e34] [cursor=pointer]:
+        - /url: mailto:stefania.pozzi.it@gmail.com
+      - generic [ref=e35]:
+        - link "LinkedIn" [ref=e36] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/sunny-stefi/
+          - text: LinkedIn
+        - generic [ref=e38]: ·
+        - generic [ref=e39]: The Hague, 2597 ZL
