@@ -91,7 +91,7 @@ The workflow itself is also a deliverable: **[agent-scripts](https://github.com/
 
 From this categorization, we can clearly see that these systems compose an *agent-centric environment* where they are able to see the screen, authenticate to services, query personal data, route decisions, and report status without ever forcing the user to switch context.
 
-The value is no longer in implementation. It’s in the *design* of the places agents can act on and eliminating everything that slows the human-machine feedback loop down. 🌟
+The value is no longer in code implementation anymore. It’s in the *design* of the places agents can act on and eliminating everything that slows the human-machine feedback loop down. 🌟
 
 
 ![ste-coding-01.jpg](/assets/images/ste-coding-01.jpg)
