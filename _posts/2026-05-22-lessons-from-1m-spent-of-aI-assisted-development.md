@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lessons Learned from $1M spent of AI-Assisted Development"
+title: "Lessons Learned from $1M spent on AI-Assisted Development"
 description: "I explored Steinberger's recent agentic engineering projects and what it emerges it's a clear shift from code implementation to design agentic environments."
 category: Agentic Engineering
 image: /assets/images/ste-coding-01.jpg
