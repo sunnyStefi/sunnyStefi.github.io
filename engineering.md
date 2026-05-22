@@ -1,7 +1,7 @@
 ---
 layout: category
-title: Engineering
-category: Engineering
-permalink: /engineering/
+title: Agentic Engineering
+category: Agentic Engineering
+permalink: /agentic-engineering/
 order: 1
 ---

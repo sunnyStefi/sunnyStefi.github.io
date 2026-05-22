@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Lessons Learned from $1M spent of AI-Assisted Development"
-description: "I explored Steinberger's recent agentic engineering projects and what it emerges it's a clear shift from implementaion to design agentic environments."
-category: AI Workflow Automations
+description: "I explored Steinberger's recent agentic engineering projects and what it emerges it's a clear shift from code implementation to design agentic environments."
+category: Agentic Engineering
 image: /assets/images/ste-coding-01.jpg
 ---
 
 <p class="post-tags">
-  <span class="tag">Inspiration</span>
-  <span class="tag">Agentic engineering</span>
-  <span class="tag">Human in the loop</span>
+  <span class="tag">CLI</span>
+  <span class="tag">Developer Tools</span>
+  <span class="tag">Agent Environment</span>
 </p>
 
 A few days ago, I came across [this tweet about Peter Steinberger's work at OpenAI](https://x.com/steipete/status/2055346265869721905/photo/1) and found myself asking an uncomfortable question:
@@ -59,9 +59,9 @@ I hadn’t considered that dashboards are essentially another attention sink. On
 
 For Peter, CLI it's the primary interface that makes his tools *composable* by machines. It can be scheduled via cron, composed through pipes, and executed by agents directly. A GUI cannot.
 
-- [`gogcli`](https://github.com/steipete/gogcli), [`wacli`](https://github.com/steipete/wacli), [`remondctl`](https://github.com/steipete/remondctl), [`metcli`](https://github.com/steipete/metcli) : terminal-first access to Google services, WhatsApp, Apple Reminders, and Messages
-- Home automation tools: [`blucli`](https://github.com/steipete/blucli), [`camsnap`](https://github.com/steipete/camsnap), [`sonoscli`](https://github.com/steipete/sonoscli), [`spogo`](https://github.com/steipete/spogo), [`ordercli`](https://github.com/steipete/ordercli), [`eightctl`](https://github.com/steipete/eightctl)
-- Distribution: [`homebrew-tap`](https://github.com/steipete/homebrew-tap), a personal Homebrew repo for CLIs fast installation
+- **[Gogcli](https://github.com/steipete/gogcli)**, **[Wacli](https://github.com/steipete/wacli)**, **[Remondctl](https://github.com/steipete/remondctl)**, **[Metcli](https://github.com/steipete/metcli)** : terminal-first access to Google services, WhatsApp, Apple Reminders, and Messages
+- Home automation tools: **[Blucli](https://github.com/steipete/blucli)**, **[Camsnap](https://github.com/steipete/camsnap)**, **[Sonoscli](https://github.com/steipete/sonoscli)**, **[Spogo](https://github.com/steipete/spogo)**, **[Ordercli](https://github.com/steipete/ordercli)**, **[Eightctl](https://github.com/steipete/eightctl)**
+- Distribution: **[Homebrew-tap](https://github.com/steipete/homebrew-tap)**, a personal Homebrew repo for CLIs fast installation
 
 ---
 
@@ -69,22 +69,22 @@ For Peter, CLI it's the primary interface that makes his tools *composable* by m
 
 Personal data that lives inside apps is invisible to agents, and most of our data lives inside apps. The intent behind these tools is to make personal data _queryable by agents by default_, by reframing applications as continuously harvested data sources, normalized and made locally accessible.
 
-- [`birdclaw`](https://github.com/steipete/birdclaw), [`wacrawl`](https://github.com/steipete/wacrawl), [`slacrawl`](https://github.com/steipete/slacrawl), [`telecrawl`](https://github.com/steipete/telecrawl): archive X, WhatsApp, Slack, Telegram, Notion data into SQLite/Markdown
-- [`sweet-cookie`](https://github.com/steipete/sweet-cookie): browser cookie extraction for agent to authenticate without extensions
+- **[Birdclaw](https://github.com/steipete/birdclaw)**, **[Wacrawl](https://github.com/steipete/wacrawl)**, **[Slacrawl](https://github.com/steipete/slacrawl)**, **[Telecrawl](https://github.com/steipete/telecrawl)**: archive X, WhatsApp, Slack, Telegram, Notion data into SQLite/Markdown
+- **[Sweet-cookie](https://github.com/steipete/sweet-cookie)**: browser cookie extraction for agent to authenticate without extensions
 
 ---
 ### Reimplement the 10% That Matters
 
 When an official tool is slow, web-bound, login-gated, or missing a key capability, the solution he founds is to *extract the essential 10%* and reimplement it as a lightweight native tool.
 
-- [`summarize`](https://github.com/steipete/summarize): extracts content from URLs, PDFs, podcasts, videos.
-- [`VibeTunnel`](https://github.com/steipete/VibeTunnel): browser-based access to a local terminal.
-- [`Poltergeist`](https://github.com/steipete/poltergeist): hot reload + file watching.
-- [`sag`](https://github.com/steipete/sag): voice synthesis CLI.
-- [`tmuxwatch`](https://github.com/steipete/tmuxwatch): TUI for tmux sessions.
-- [`osc-progress`](https://github.com/steipete/osc-progress), [`Swiftdansi`](https://github.com/steipete/Swiftdansi): terminal UX improvements.
+- **[Summarize](https://github.com/steipete/summarize)**: extracts content from URLs, PDFs, podcasts, videos.
+- **[VibeTunnel](https://github.com/steipete/VibeTunnel)**: browser-based access to a local terminal.
+- **[Poltergeist](https://github.com/steipete/poltergeist)**: hot reload + file watching.
+- **[Sag](https://github.com/steipete/sag)**: voice synthesis CLI.
+- **[Tmuxwatch](https://github.com/steipete/tmuxwatch)**: TUI for tmux sessions.
+- **[Osc-progress](https://github.com/steipete/osc-progress)**, **[Swiftdansi](https://github.com/steipete/Swiftdansi)**: terminal UX improvements.
 
-The workflow itself is also a deliverable: **[`agent-scripts`](https://github.com/steipete/agent-scripts)** is a living archive of the rules he gives agents, the scripts he chains, and the editor setup.
+The workflow itself is also a deliverable: **[agent-scripts](https://github.com/steipete/agent-scripts)** is a living archive of the rules he gives agents, the scripts he chains, and the editor setup.
 
 ---
 ### Takeaway: Build Environments for Agents

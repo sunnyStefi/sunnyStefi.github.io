@@ -16,7 +16,7 @@
 
         <div class="nav-items">
           {%- for p in cat_pages -%}
-          <a class="nav-item" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+          <a class="nav-item{% if page.url == p.url %} nav-item--active{% endif %}" href="{{ p.url | relative_url }}">{{ p.title }}</a>
           {%- endfor -%}
         </div>
       </nav>
