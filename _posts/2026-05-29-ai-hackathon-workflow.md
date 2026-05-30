@@ -82,6 +82,6 @@ What I learned from this experience:
 - **Parallelize** when tasks are clearly independent and there is nothing yet to break
 - **Stay sequential** when each result shapes the next prompt: anything where you have to experience the output before choosing your next move.
 
-For me, it was a genuinely fun adventure 🏝. Treating Claude as an integrated part of my workflow — not just an efficient machine — is what kept me fully engaged the whole way through.
+For me, it was a genuinely fun adventure 🏝. Treating Claude as an integrated part of my workflow, not just an efficient machine is what kept me fully engaged the whole way through.
 
 ![sourcelabs-hackathon.jpeg](/assets/images/sourcelabs-hackathon.jpeg)
