@@ -60,11 +60,12 @@ For code changes I kept the workflow very simple:
 - `git push` if the result was good enough to keep
 - `git stash` if the change did not work and I needed to reset fast
 
-Clearing the context between every change and sticking to this stash-push rhythm was the single biggest thing that kept me moving fast. It removed the temptation to "just fix it a little more" and forced a clean decision after every iteration.
+Clearing the context between every change and sticking to this stash-push rhythm was the single biggest thing that kept me moving fast. 
 
-That said, I was still just using two Claude instances in a staggered pipeline — not true parallelization.
+That said, I was still just using two Claude instances in a staggered pipeline, not true parallelization.
 
 ![Staggered agent loop: the human steers two Claude instances between each iteration](/assets/images/agent-loop.png)
+
 I applied the same principle (human in the loop for anything that requires taste) to the main background music 🎶. I trimmed the design document down to 3k characters, fed it to [Suno](https://suno.com) as a style prompt, and refined from there.
 Five minutes of prompting produced a custom chiptune track that actually fits the game's mood.
 
@@ -72,8 +73,7 @@ No agent could have made that call for me. Knowing *when* to hand creative decis
 
 Parallelization works best when _you are the bottleneck_: you don’t want to sit idle, but instead continuously steer agents between interactions 🌼.
 
-> "Technically correct" and "actually fun" are two different things, and a machine can't tell them apart — it never lives through the
-▎ product it's building.
+> "Technically correct" and "actually fun" are two different things, and a machine can't tell them apart — it never lives through the product it's building.
 
 ### Takeaways
 
