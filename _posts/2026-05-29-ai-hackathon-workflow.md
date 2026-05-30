@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI Hackathon Aftermath: My 5h agentic Workflow"
+title: "AI Hackathon Aftermath: My 6h hackathon agentic Workflow"
 description: "With 5 hours and my Claude subscription I had to ship a retro game from scratch. Here is exactly what I learned and my AI workflow."
 category: Agentic Engineering
 image: /assets/images/ultracode.png
