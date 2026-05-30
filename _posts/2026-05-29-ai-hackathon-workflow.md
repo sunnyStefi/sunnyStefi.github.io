@@ -10,7 +10,7 @@ image: /assets/images/ultracode.png
 
 Once a month, our team at [Sourcelabs](https://sourcelabs.nl/) sets aside a full day to learn something new.
 
-This time we needed to build a game from big classics like Simon the Sorcerer, Command and Conquer, Doom, Jazz Jackrabbit, and Duke Nukem. 
+This time we needed to draw a game from big classics like Simon the Sorcerer, Command and Conquer, Doom, Jazz Jackrabbit, and Duke Nukem. 
 Retro-styled, stylish, with music and sound effects, fun, educational, and with a personal touch.
 
 The tech constraints were minimal: host it in a browser, no backend, local storage only. It sounded like the recipe for a fun day!
