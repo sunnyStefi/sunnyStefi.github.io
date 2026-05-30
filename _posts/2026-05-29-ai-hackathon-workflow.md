@@ -64,30 +64,7 @@ Clearing the context between every change and sticking to this stash-push rhythm
 
 That said, I was still just using two Claude instances in a staggered pipeline — not true parallelization.
 
-```mermaid
-sequenceDiagram
-    participant H as 🧑 YOU
-    participant C1 as ⚡ Claude 1
-    participant C2 as ⚡ Claude 2
-
-    loop Each iteration
-        H->>C1: Prompt N
-        H->>C2: Prompt N+1
-
-        par Staggered Execution (not true fan-out)
-            C1->>C1: Execute task N
-        and
-            C2->>C2: Execute task N+1
-        end
-
-        C1-->>H: Result N
-        C2-->>H: Result N+1
-
-        H->>H: Review Result N → decide next prompt
-        H->>H: Review Result N+1 → decide next prompt
-        Note over H: ✅ Human steers each step → loop starts again
-    end
-```
+![Staggered agent loop: the human steers two Claude instances between each iteration](/assets/images/agent-loop.png)
 I applied the same principle (human in the loop for anything that requires taste) to the main background music 🎶. I trimmed the design document down to 3k characters, fed it to [Suno](https://suno.com) as a style prompt, and refined from there.
 Five minutes of prompting produced a custom chiptune track that actually fits the game's mood.
 
@@ -107,4 +84,4 @@ What I learned from this experience:
 
 For me, it was a genuinely fun adventure 🏝. Treating Claude as an integrated part of my workflow — not just an efficient machine — is what kept me fully engaged the whole way through.
 
-
+![sourcelabs-hackathon.jpeg](/assets/images/sourcelabs-hackathon.jpeg)
